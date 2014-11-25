@@ -1,0 +1,26 @@
+{
+  "life_event":
+  {
+    "title"                     : {"type": "string"},
+    "slug"                      : {"type": "string"},
+    "required"                  : {"type": "boolean"},
+    "is_seasonal"               : {"type": "boolean"},
+    "date_until"                : {"type": "date"},
+    "icon"                      : {"type": "string"},
+    "short_description"         : {"type": "string"},
+    "is_published"              : {"type": "boolean"},
+
+    "experiences"               : {"type": "hasMany", "entity": "experience"}
+  },
+
+  "experience":
+  {
+    "title"                     : {"type": "string"},
+    "overview"                  : {"type": "string", "multiLine": true},
+    "is_published"              : {"type": "boolean"},
+    "slug"                      : {"type": "string"},
+    "date_created"              : {"type": "date"},
+
+    "life_events"               : {"type": "hasMany", "entity": "life_event"}
+  }
+}

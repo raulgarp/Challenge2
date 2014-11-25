@@ -1,0 +1,16 @@
+{
+  "name": "Challenge2",
+  "version": "0.0.1",
+  "description": "Programming challenge for new devs",
+  "main": "dataModelValidator.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --growl --ui bdd --reporter spec --slow 5 --recursive tests/"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "~2.0.1",
+    "chai": "~1.9.2",
+    "sinon": "~1.10.3"
+  }
+}

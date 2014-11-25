@@ -1,0 +1,17 @@
+Write a program that reads dataModel.json and validates every entity in the json(life_event, experience)
+if a field is incorrect it should throw an error
+
+- all fields must have a type
+- valid types are string|boolean|date|hasMany
+- if a field is hasMany it should contain an entity property
+- if field hasMany and has entity property it must be an entity in json
+
+Program requirements:
+- you will need to install node http://nodejs.org/
+- use jshint to validate your code style # https://github.com/MethodExists/js-style-guide
+ you can copy the .jshintrc to check your style, we use SublimeText + JSHint plugin
+- Write some test in mocha to validate your solution 
+
+Bonus points:
+- Upload your solution to a repository in github
+- Use check-types to verify values https://github.com/philbooth/check-types.js
